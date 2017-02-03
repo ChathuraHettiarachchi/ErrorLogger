@@ -1,5 +1,29 @@
 apply plugin: 'com.android.library'
 
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'ErrorLogger'
+
+    publishedGroupId = 'com.chootdev'
+    libraryName = 'ErrorLogger'
+    artifact = 'errorlogger'
+
+    libraryDescription = 'This library will help to track down error logs by creating a database record. This will mainly used in industry based application testing environment. User of the application can generate list of errors that have occurred during time period Edit'
+
+    siteUrl = 'https://github.com/ChathuraHettiarachchi/ErrorLogger'
+    gitUrl = 'https://github.com/ChathuraHettiarachchi/ErrorLogger.git'
+
+    libraryVersion = '1.1.0'
+
+    developerId = 'ChathuraHettiarachchi'
+    developerName = 'Chathura Hettiarachchi'
+    developerEmail = 'chathura93@yahoo.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
 android {
     compileSdkVersion 23
     buildToolsVersion "23.0.2"
@@ -35,3 +59,6 @@ dependencies {
     compile "com.j256.ormlite:ormlite-android:$ormLite"
     compile "com.j256.ormlite:ormlite-core:$ormLite"
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
