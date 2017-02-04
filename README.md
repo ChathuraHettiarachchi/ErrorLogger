@@ -24,7 +24,7 @@ repositories {
 
 dependencies {
     ...
-    compile 'com.chootdev:errorlogger:1.1.0'
+    compile 'com.chootdev:errorlogger:1.1.1'
 }
 ```
 
@@ -35,7 +35,7 @@ Maven
 <dependency>
   <groupId>com.chootdev</groupId>
   <artifactId>errorlogger</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1</version>
   <type>pom</type>
 </dependency>
 ```
@@ -101,6 +101,8 @@ NOTE: Inserting and getting data take time in this generated output. This is not
 
 Changelog
 ---------
+* **1.1.1**
+    * Fixed crash on log
 * **1.1.0**
     * Fixed crashed with getMostRecentRecords
 * **1.0.0**
